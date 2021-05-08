@@ -26,7 +26,8 @@ class Ikona extends Component  {
     
 
     componentDidMount() {
-       fetch(`/api/catalogue/:${this.props.match.params.category}/${this.props.match.params.id}`)
+        
+       fetch(`/api/catalogue/${this.props.match.params.category}/${this.props.match.params.id}`)
        .then(res => res.json())
        .then(icon => { 
             const shapes = icon.sizeshapes.map(item => Object.keys(item)[0]) 

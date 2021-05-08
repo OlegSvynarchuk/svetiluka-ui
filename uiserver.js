@@ -16,7 +16,7 @@ app.get('*.js', function (req, res, next) {
     next();
   });
 app.use(express.static('public'));
-app.use(createProxyMiddleware("/api", { target: apiProxyTarget }));
+app.use(createProxyMiddleware("/api", { target: apiProxyTarget, changeOrigin: true }));
 app.get('*', (req, res, next) => {
    
     res.sendFile(path.join(__dirname, 'public/index.html'))

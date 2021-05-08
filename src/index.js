@@ -1,8 +1,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Router } from 'react-router-dom'
-import createHistory from 'history/createBrowserHistory';
+import {BrowserRouter } from 'react-router-dom'
+
 
 import App from './app.jsx'
 import '../src/style.css'
@@ -10,11 +10,11 @@ import ScrollToTop from './scrollToTop.jsx'
 
 
 
-const history = createHistory()
+
 
 ReactDOM.render(
-<Router history={history} >
+<BrowserRouter>
     <ScrollToTop />
     <App />
-</Router>    , 
+</BrowserRouter>    , 
 document.getElementById('contents'))
