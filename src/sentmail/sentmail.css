@@ -1,0 +1,15 @@
+.sentmail {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--textFont);
+    color: var(--textColor);
+    flex-direction: column;
+}
+
+.sentmail h3 {
+    width: 50%;
+    color: var(--textColor);
+}

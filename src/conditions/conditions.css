@@ -1,0 +1,117 @@
+.conditions-section-page {
+    width: 90%;
+    margin: 40px auto;
+    font-family: var(--textFont);
+    color: var(--textColor);
+}
+
+@media screen and (max-width: 768px) {
+    .conditions-section-page {
+        flex-direction: column;
+    }
+}
+.payment-conditions-section {
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .payment-conditions-section {
+        width: 100%;
+        order: 1;
+        text-align: justify;
+        margin: 0;
+    }
+}
+
+.order-icon-section a {
+    color: #000;
+    font-weight: bold;
+}
+
+.conditions-section-page h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .conditions-section-page h3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+
+.conditions-section-page p {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    line-height: 1.5;
+    color: var(--textFont);
+    color: var(--textColor);
+}
+
+@media screen and (max-width: 768px) {
+    .conditions-section-page p {
+       margin: 0;
+       margin-bottom: 20px;
+    }
+}
+
+.order-icon-section {
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .order-icon-section {
+        width: 100%;
+        order:0;
+        text-align: justify;
+        margin: 0;
+    }
+}
+
+.conditions-section-page span {
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.send-form-title  {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(68,68, 68);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.order-form-section {
+    width: 100%;
+}
+
+.order-form-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(68,68, 68);
+ }
+
+ .file {
+     position: relative;
+ }
+
+ .delete-image {
+     position: absolute;
+     left: 90%;
+     top: 53%;
+     cursor: pointer;
+     font-size: 15px;
+     font-weight: 300;
+     transition: var(--mainTransition);
+ }
+
+ .delete-image:hover {
+     font-weight: 700;
+}

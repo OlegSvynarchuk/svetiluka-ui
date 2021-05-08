@@ -1,0 +1,22 @@
+.catalog-header {
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--decorativeColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.catalog-header-title {
+    color: #fff; 
+    font-family: var(--decorativeFont);
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 1.4px;
+    font-weight: lighter;
+}
+
+
+
+

@@ -1,0 +1,28 @@
+.search-results-title {
+    font-size: 20px;
+    font-family: var(--textFont);
+    color: var(--textColor);
+    text-transform: uppercase;
+    padding: 5px;  
+    margin-left: 20px;    
+}
+
+.search-word {
+    color: #000;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.total {
+    color: var(--goldenColor);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .search-results-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+    }
+}

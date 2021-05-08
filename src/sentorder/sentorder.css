@@ -1,0 +1,30 @@
+.sentorder {
+    min-height: 70vh;
+    width: 80%;
+    margin: 20px auto;
+    font-family: var(--textFont);
+    color: var(--textColor);
+
+}
+
+.sentorder h3 {
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .sentorder h3 {
+       font-size: 16px;
+    }
+} 
+
+.sentorder-list {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.sentorder-list-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

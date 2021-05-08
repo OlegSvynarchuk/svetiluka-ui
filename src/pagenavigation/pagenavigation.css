@@ -1,0 +1,25 @@
+.page-navigation a {
+    color: rgb(68, 68, 68);
+    font-size: 8px;
+    font-family: var(--secondaryFont);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page-navigation {
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .page-navigation {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.page-navigation span{
+    font-size: 8px;
+    color: #c7c7c7;
+    display: inline-block;
+    padding: 0 5px;
+}

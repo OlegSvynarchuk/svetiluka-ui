@@ -1,0 +1,34 @@
+
+
+.contacts-wrapper {
+    font-family: var(--textFont);
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 80vh; 
+    margin-bottom: 20px;
+}
+
+
+
+.contacts-wrapper h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.contacts p {
+    margin-bottom: 5px;
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+.contact-item {
+    font-weight: bolder;
+    margin-right: 5px;
+}
