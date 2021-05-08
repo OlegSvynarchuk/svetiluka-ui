@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "ui section",
   "main": "index.js",
+  "engines": {
+    "node": "11.11",
+    "npm": "6.7"
+    },
   "scripts": {
     "build": "webpack",
+    "heroku-postbuild": "npm run compile",
     "start": "nodemon -w uiserver.js -w .env uiserver.js",
     "compile": "webpack --mode production",
     "watch": "webpack --watch",
