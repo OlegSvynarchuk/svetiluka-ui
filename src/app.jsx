@@ -8,7 +8,7 @@ import Iconpage from './pages/iconpage.js'
 import Basketpage from './pages/basketpage.js'
 import Homepage from './pages/homepage.js'
 import Sentorderpage from './pages/sentorder.js'
-import Search from './search/search.jsx'
+import SearchPage from './pages/searchpage.js'
 import Categoriespage from './pages/categoriespage.js'
 import SentMailPage from './pages/sentmail.js'
 import notfound from './notfound.jsx'
@@ -143,7 +143,7 @@ render() {
                   />}/>
                  <Route exact path = '/sentorder' 
                  render={(props) => <Sentorderpage {...props}/>}/>
-                 <Route path='/search' component={Search}/>
+                 <Route path='/search' component={SearchPage}/>
                  <Route path = '/conditions' component={ConditionsPage} />
                  <Route path = '/sentmail' component={SentMailPage}/>
                  <Route path= '/contacts' component={Contactspage} />

@@ -14,6 +14,8 @@ import './ikona.css'
 
 class Ikona extends Component  {
    
+    boardRef = React.createRef();
+    sizeRef = React.createRef();
         state = {
             icon: null,
             shapes: [],
@@ -131,7 +133,7 @@ componentDidUpdate(prevProps, prevState) {
         this.setState({icon: {...this.state.icon,  
                     board : board
                     }
-                })
+                }, () => {this.boardRef.current.blur()})
     }
 
     setSize = (e) => {
@@ -140,7 +142,7 @@ componentDidUpdate(prevProps, prevState) {
             icon: {
                 ...this.state.icon, size: size,
             }
-        })
+        }, () => {this.sizeRef.current.blur()})
 }
     
 
@@ -186,7 +188,7 @@ componentDidUpdate(prevProps, prevState) {
                             <select name="size" id="size"
                             value={this.state.icon.size}
                             onChange={this.setSize}
-                            
+                            ref={this.sizeRef}
                             >
                             {sizes.map((size) => {
                                 return(
@@ -204,6 +206,7 @@ componentDidUpdate(prevProps, prevState) {
                             <select name="board" id="board"
                             value={this.state.icon.board}
                             onChange={this.setBoard}
+                            ref={this.boardRef}
                             >
                             {this.state.shapes.map(item => {
                                
@@ -215,7 +218,6 @@ componentDidUpdate(prevProps, prevState) {
                                 </option>) 
                             })}    
                         </select>
-                            
                         </div>
                         <div>
                               {
@@ -231,8 +233,10 @@ componentDidUpdate(prevProps, prevState) {
                     </div>
                     <div className='addtocart-button-wrapper flex'>
                     <button className={addTobasketButtonClasses}
-                    onClick={() => this.props.addToBasket(this.state.icon)}>
-                       {this.props.isIconInBasket(id, image, price) ? 'У корпи' : 'Додаj у корпу'} 
+                       onClick={() => this.props.addToBasket(this.state.icon)}
+                       disabled={this.props.isIconInBasket(id, image, price)}
+                       >
+                       {this.props.isIconInBasket(id, image, price) ? 'У корпи' : 'Додаj у корпу'}    
                        {this.props.loading && <span>...</span>}
                     </button>
                     <Link to ={{

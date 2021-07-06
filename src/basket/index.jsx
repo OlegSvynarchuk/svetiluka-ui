@@ -220,7 +220,7 @@ class Basket extends Component {
 
     onHandleSubmit = (e) => {
         e.preventDefault()
-        const {name, email, address, phone, message} = this.state
+        const { name, email, address, phone, message} = this.state
         const {items} = this.props
         const totalPrice = this.props.getTotalPrice()
         const requestOptions = {
@@ -269,7 +269,7 @@ class Basket extends Component {
         const totalPrice = this.props.getTotalPrice()
         if(this.props.loading) {return <div className='empty-page'></div>}
         if(this.props.items.length === 0) {return <div className='empty-basket'>
-            ваша корпа jе празна
+            <p>ваша корпа jе празна</p>
         </div>}
         
        return (

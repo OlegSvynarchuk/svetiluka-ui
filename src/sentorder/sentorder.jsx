@@ -37,8 +37,7 @@ class SentOrder extends Component {
               <h3>
                   Поштовани <span className='bolder'>{this.state.name}</span>,
               </h3> 
-              <h3>ваша поручбина броj <span className='bolder'>{this.state.id}</span> 
-                  успешно примльена.
+              <h3>ваша поручбина броj <span className='bolder'>{this.state.id}</span> успешно примльена.
               </h3>
               <h3>Ускоро чемо контактирати вас како би потврдили поручбину.
               </h3>

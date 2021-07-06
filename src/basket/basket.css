@@ -288,17 +288,19 @@ input:focus, textarea:focus {
 
 .empty-basket {
     width: 100%;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 50px;
+    text-transform: uppercase;
     color: var(--textColor);
     font-size: 30px;
-    min-height: 45vh;
+    height: calc(100vh - 243px);
     font-family: var(--textFont);
 }
 
 .empty-page {
-    min-height: 80vh;
+    height: calc(100vh - 283px);
 }
 
 /*mobile view basket*/

@@ -1,41 +1,47 @@
 /* -- global styles -- */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
 
 .app {
-  
-  min-width: 300px;
-  max-width: 1400px;
-}  
+  width: 100%;
+ 
+}
 
 :root {
-   --borderStyle: 1px solid rgba(112, 112, 112, 0.4);
-   --textColor: rgb(54, 53, 53);
-   --decorativeColor: #8F7E50;
-   --goldenColor: #8e6b00;
-   --primaryFont: 'Cousine', monospace, Tahoma, sans-serif;
-   --decorativeFont: 'Poiret One', Tahoma, sans-serif;
-   --secondaryFont: 'Comfortaa', Tahoma, sans-serif;
-   --textFont: 'Fira Sans', sans-serif, Tahoma;
-   --mainTransition: all 0.5s linear;
+  --borderStyle: 1px solid rgba(112, 112, 112, 0.4);
+  --textColor: rgb(54, 53, 53);
+  --decorativeColor: #8F7E50;
+  --goldenColor: #8e6b00;
+  --primaryFont: 'Cousine', monospace, Tahoma, sans-serif;
+  --decorativeFont: 'Poiret One', Tahoma, sans-serif;
+  --secondaryFont: 'Comfortaa', Tahoma, sans-serif;
+  --textFont: 'Fira Sans', sans-serif, Tahoma;
+  --mainTransition: all 0.5s linear;
 }
 
 .container {
- width: 95%;
- min-height: 50vh; 
- margin: 0 auto;
- 
+  width: 95%;
+  min-height: 50vh;
+  margin: 0 auto;
+
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
-  
+
 }
+
+
 
 
 button:hover {
@@ -49,16 +55,16 @@ button {
 }
 
 
-  
-  ul {
-    list-style: none;
-  }
+
+ul {
+  list-style: none;
+}
 
 
 
 a {
   text-decoration: none;
-  
+
 }
 
 .center {
@@ -68,11 +74,10 @@ a {
 }
 
 .bolder {
-  color: #000;
+  color: var(--textColor);
   font-weight: bold;
 }
 
 select {
   background-color: #fff;
 }
-

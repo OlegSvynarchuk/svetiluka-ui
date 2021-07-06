@@ -178,7 +178,9 @@ label {
 }
 
 .addtocart-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 48%;
     padding: 10px 35px;
     color: #fff;

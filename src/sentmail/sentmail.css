@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 
-.sentmail h3 {
+.sentmail h4 {
     width: 50%;
-    color: var(--textColor);
+    
 }

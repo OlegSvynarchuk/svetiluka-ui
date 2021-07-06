@@ -137,7 +137,7 @@ class Catalogue extends Component {
 render() {
   return (
     <div className='flex'> 
-        <MediaQuery minDeviceWidth={768}>
+        <MediaQuery minDeviceWidth={769}>
             <Sidebar />
         </MediaQuery> 
           <div className='catalogue-wrapper' >

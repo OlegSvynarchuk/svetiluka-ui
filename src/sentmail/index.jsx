@@ -22,10 +22,10 @@ class SentMail extends Component{
         } else {
             return (
                 <div className='sentmail'>
-                    <h3>Ваш меjл jе успешно послат. 
+                    <h4>Ваш меjл jе успешно послат. 
                         Ускоро чемо контактирати вас
                         у вези иконе коjу сте наручили
-                    </h3>
+                    </h4>
                     <Link to ='/catalogue' className='back-btn'
                         style={{width: '250px'}}
                         >Вратисе у каталог</Link>

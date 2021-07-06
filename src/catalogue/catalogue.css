@@ -85,7 +85,7 @@
 
   @media screen and (max-width: 768px) {
     .icon-name {
-      font-size: 3vw;
+      font-size: 4vw;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -151,21 +151,23 @@
   }
 
   .itemscount {
-    width: 25%;
-    font-size: 13px;
+    
+    font-size: 14px;
     text-transform: uppercase;
   }
 
   @media screen and (max-width: 768px) {
     .itemscount {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       margin-bottom: 10px;
+      font-size: 16px;
     }
   }
 
   .itemscount-list {
     display: flex;
+    margin-left: 20px;
   }
 
   
@@ -174,6 +176,14 @@
     font-weight: 400;
     display: inline-block;
     padding: 0 4px;
+    
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    .itemscount-item {
+      padding: 0 8px;
+    }
   }
 
   .itemscount-item:hover {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withRouter} from 'react-router'
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import axios from 'axios'
 import classNames from 'classnames'
@@ -55,6 +55,7 @@ class Header extends Component{
           'flex': true,
           'show-menu': this.state.showmenu
       })
+      
     return (
         <>
           <header>
@@ -63,8 +64,10 @@ class Header extends Component{
                <div className='logo'>
                       <img src='/images/logo.png'></img> 
                       <div>
+                      <Link to ='/'>
                           <h2 className='logo-title'>Свети лука</h2>
                           <p className='logo-description'>Иконописачка радионица</p>
+                      </Link>
                       </div>  
                      </div>
                      <div className='topnav-right flex'>
@@ -109,10 +112,10 @@ class Header extends Component{
                             </div> 
                     
                                 <ul className={menuClasses}>
-                                    <li><Link to='/'>почетна</Link></li>
-                                    <li><Link to='/catalogue'>иконе</Link></li>
-                                    <li><Link to='/conditions'>како наручити</Link></li>
-                                    <li><Link to='/contacts'>контакт</Link></li>
+                                    <li><NavLink exact to='/' activeClassName="active-link">почетна</NavLink></li>
+                                    <li><NavLink to='/catalogue' activeClassName="active-link">иконе</NavLink></li>
+                                    <li><NavLink to='/conditions' activeClassName="active-link">како наручити</NavLink></li>
+                                    <li><NavLink to='/contacts' activeClassName="active-link">контакт</NavLink></li>
                                 </ul>
                  </header>              
         </>

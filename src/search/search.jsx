@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import classNames from 'classnames'
 const queryString = require('query-string');
 import MediaQuery from 'react-responsive'
 import axios from 'axios'
 
-import Header from '../header/index.jsx'
-import Footer from '../footer/index.jsx'
+
 import Pagination from '../pagination/index.jsx';
 import SearchSidebar from '../searchsidebar/index.jsx'
 import MobileViewSearchFilters from '../mobileViewSearchFilters/index.jsx'
@@ -166,19 +165,22 @@ class Search extends Component {
             if(this.state.res){
               return <div className='search-results-title'
               >
-              резултати претраге за <span className='search-word'>{`'${this.state.searchWord}'`}</span>
+              <p>    
+              резултати претраге за 
+              <span className='search-word'>{`'${this.state.searchWord}'`}
+              </span>
               {this.state.res.category && <span> категориjа 
-              <span className='search-word'>{` '${this.state.res.category}'`}</span></span>} : <span className='total'>{this.state.res.total}</span></div>
+              <span className='search-word'>{` '${this.state.res.category}'`}</span></span>} : 
+              <span className='total'>{this.state.res.total}</span>
+              </p>
+              </div>
             } else{
               return null
             }
           }
                  
            return (
-            <>
-            <Header></Header>
-            <div className='flex'>
-            {this.state.serverError && <Error />}
+        <div className='flex'>
             <MediaQuery minDeviceWidth={768}>
                 <SearchSidebar 
                     setCategory={this.setCategory} 
@@ -187,6 +189,7 @@ class Search extends Component {
                     />
                 </MediaQuery>    
                 <div className='catalogue-wrapper'>
+                {this.state.serverError && <Error />}
                 {rendertotal()}
                     <div className='filters flex'>
                  <select id='sort'
@@ -234,12 +237,10 @@ class Search extends Component {
                   />}
                 </div>
             </div>
-            <Footer></Footer>
-            </>
-        );
+            );
     }
 }
 
-export default Search;
+export default withRouter(Search);
 
 

@@ -17,6 +17,7 @@
     text-align: center;
     align-items: flex-end;
     flex-wrap: wrap;
+    
 }
 
 
@@ -52,9 +53,14 @@
     }
 }
 
-.category-image-wrapper {
-  
+@media screen and (max-width: 768px) {
+    .categories-list-item:last-of-type {
+        width: 45%;
+        margin: 0 auto;
+    }
 }
+
+
 
 .category-image {
     width: 100%;

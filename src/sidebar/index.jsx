@@ -43,6 +43,7 @@ export default class Sidebar extends Component {
             <div className='sidebar'>
             {this.state.serverError && <Error />}
                  <h3 className='categories-title'>Категориjе</h3>
+                  <Link to='/catalogue'>Све Категориjе</Link>
                     {this.renderCategories(categories)}
                 </div>
         )

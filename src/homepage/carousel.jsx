@@ -23,54 +23,76 @@ export default class Slider extends Component {
         >
              <div className='slide-container'>
                  <div className ='slideimagecontainer'>
-                    <img src='/creation/icon1.jpg'>
+                    <img src='/creation/scratch.jpg'>
                      </img>
                  </div>
                  
                  <div className='caption'>
                  <h4>Припрема даске</h4>    
-                 <p>Не следует, однако забывать, 
-                 что дальнейшее развитие различных форм деятельности 
-                обеспечивает широкому кругу (специалистов) участие</p>
+                 <p>Пре сликања на липову даску се наноси око 12 слојева
+                     туткално кредне препаратуре. Затим се она суши па 
+                     шмиргла најфиником воденом шмирглом. 
+                 </p>
                  </div>
             </div>   
             <div className='slide-container'>
                  <div className ='slideimagecontainer'>
-                    <img src='/creation/icon2.jpg'>
+                    <img src='/creation/painting.jpg'>
                      </img>
                  </div>
                  
                  <div className='caption'>
-                 <h4>Сликанье</h4> 
-                <p> Не следует, однако забывать, 
-                 что дальнейшее развитие различных форм деятельности 
-                обеспечивает широкому кругу (специалистов) участие</p>
+                 <h4>Сликање</h4> 
+                <p>Икона се слика јајчаном темпером коју ручно правимо
+                    од квалитетних пигмената, жуманцета и сирћета.
+                    У нашој радионици се иконопише у византијској 
+                    техници сликања.
+                    </p>
                  </div>
             </div>
             <div className='slide-container'>
                  <div className ='slideimagecontainer'>
-                    <img src='/creation/icon3.jpg'>
+                    <img src='/creation/glue.jpg'>
                      </img>
                  </div>
                  
                  <div className='caption'>
-                 <h4>Позлачиванье</h4> 
-                 <p>Не следует, однако забывать, 
-                 что дальнейшее развитие различных форм деятельности 
-                обеспечивает широкому кругу (специалистов) участие</p>
+                 <h4>Припрема за позлату</h4>    
+                 <p>После сликања се приступа наношењу посебног лака
+                     шелака који се шмиргла да буде потпуно гладак а
+                     потом се површина на коју иде злато премазује 
+                     микстион лепком.
+                 </p>
                  </div>
             </div>
             <div className='slide-container'>
                  <div className ='slideimagecontainer'>
-                    <img src='/creation/icon4.jpg'>
+                    <img src='/creation/gold.jpg'>
+                     </img>
+                 </div>
+                 
+                 <div className='caption'>
+                 <h4>Позлаћивање</h4> 
+                 <p>За наше иконе користимо Розенобл 24 каратно
+                     злато у трансфер стању. Оно се наноси када 
+                     микстион почне да лепи. После лепљења се 
+                     површина лагано полира памучном ватом.
+                 </p>
+                 </div>
+            </div>
+            <div className='slide-container'>
+                 <div className ='slideimagecontainer'>
+                    <img src='/creation/readyicon.jpg'>
                      </img>
                  </div>
                  
                  <div className='caption'> 
                  <h4>Готова икона</h4> 
-                 <p>Не следует, однако забывать, 
-                 что дальнейшее развитие различных форм деятельности 
-                обеспечивает широкому кругу (специалистов) участие</p>
+                 <p>После завршне обраде ивица и рама бојом икона
+                     се лакира сликарским акрилним лаком у спреју. 
+                     Позадина је заштићена црвеном бојом и на њој
+                     стоји сертификат о самој издради наше радионице.
+                 </p>
                 </div>
             </div>
               

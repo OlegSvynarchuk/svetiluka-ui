@@ -16,8 +16,8 @@ export default function Contacts() {
                        <span className='contact-item'>email:</span>
                         info@svetilukaicons.com
                     </p>
-                    <p><span className='contact-item'>телефон:</span> +381 123 45 67, +381 123 45 67 </p>
-                    <p><span className='contact-item'>viber:</span> +381 123 45 67</p>
+                    <p><span className='contact-item'>телефон:</span> +381 064 715 44 22, +381 062 562 35 11</p>
+                    <p><span className='contact-item'>viber:</span> +381 062 562 35 11</p>
                     <p><span className='contact-item'>skype:</span> svetilukaicons</p>
                 </div>
          </div>   
