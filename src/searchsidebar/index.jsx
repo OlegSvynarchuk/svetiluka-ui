@@ -51,7 +51,7 @@ export default class SearchSidebar extends Component {
                  <h3 className='categories-title'>Категориjе</h3>
                     <div onClick={() => this.props.fetchAllIcons()}
                     className={allCategoriesClasses}
-                    >СВЕ КАТЕГОРИJЕ</div>
+                    >Све иконе</div>
                     {this.renderCategories(categories)}
                 </div>
         )

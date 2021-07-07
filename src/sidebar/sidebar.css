@@ -57,6 +57,10 @@
     transition: var(--mainTransition);
 } 
 
+.categories-item a {
+    color: #000;
+}
+
 @media screen and (max-width: 768px) {
     .categories-item {
         padding: 10px 5px 10px 5px;

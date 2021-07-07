@@ -39,11 +39,21 @@ export default class Sidebar extends Component {
 
     render() {
         const {categories} = this.state
+        const allCategoriesClasses = classNames({
+            'categories-item': true,
+            'all': true,
+            'active-category': !this.props.activeCategory
+        })
         return (
             <div className='sidebar'>
             {this.state.serverError && <Error />}
                  <h3 className='categories-title'>Категориjе</h3>
-                  <Link to='/catalogue'>Све Категориjе</Link>
+                  <Link 
+                    style={{display:'block'}}
+                    className={allCategoriesClasses}
+                    to='/catalogue'>
+                        Све Иконе
+                  </Link>
                     {this.renderCategories(categories)}
                 </div>
         )
